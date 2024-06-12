@@ -1,0 +1,46 @@
+.top-menu {
+    // border: 1px solid;
+    background-color: teal;
+    color:white;
+    padding: 5px 2%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    .svg { stroke: white !important }
+    .brand-logo,
+    .menu-toggle {
+        display: flex;
+        align-items: center;
+    }
+    .brand-logo {
+        font-weight: bold;
+    }
+    .menu-options {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .menu-toggle {
+        img {
+            width: 100%;
+            max-height: 28px;
+        }
+    }
+
+    /* Media quieries */
+    @media (min-width: 350px) {
+        .top-menu {
+            padding: 0;
+        }
+        .menu-toggle {
+            display: none;
+        }
+    }
+
+    @media (max-width: 350px) {
+        .menu-options {
+            display: none;
+        }
+    }
+}
