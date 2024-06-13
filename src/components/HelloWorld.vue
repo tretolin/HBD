@@ -1,13 +1,14 @@
 <script>
 import TopMenu from "./TopMenu/TopMenu.vue";
-
+import Profile from "./Profile/Profile.vue";
 export default {
-    components: { TopMenu },
+    components: { TopMenu, Profile },
 };
 </script>
 
 <template>
     <TopMenu />
+    <Profile/>
 </template>
 <style>
 body {
