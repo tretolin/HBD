@@ -12,3 +12,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.rounded { 
+  border-radius: 50%;
+  overflow: hidden;
+}
