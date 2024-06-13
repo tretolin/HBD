@@ -17,3 +17,7 @@
   border-radius: 50%;
   overflow: hidden;
 }
+.no-margin {margin: 0}
+.text-center { text-align: center }
+.size-regular { font-size: 18px }
+.size-medium { font-size: 24px }
