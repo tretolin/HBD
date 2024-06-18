@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
-const name = ref("Luis Treto");
+const name = ref("Luis Javier");
 const description = ref(`Some things about me and some things
 that never happened but I say
 that I did. Filling with random phrases like los pollos locos`);
@@ -9,7 +9,7 @@ that I did. Filling with random phrases like los pollos locos`);
 <template>
     <div class="profile-presentation">
         <div class="profile-pic rounded">
-            <img src="../../assets/profile.png" alt="" />
+            <img src="../../assets/profile.jpg" alt="" />
         </div>
         <h1 class="profile-name no-margin">{{ name }}</h1>
         <p class="text-center size-regular">
@@ -24,29 +24,32 @@ that I did. Filling with random phrases like los pollos locos`);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* border: 1px solid tomato; */
     div,
-    h2 {
-        border: 1px solid blaredck;
+    h1 {
+        border: 0px solid black;
     }
 
     .profile-pic {
         display: flex;
-        width: 25vh;
-        height: 25vh;
+        width: 25vw;
+        height: 25vw;
     }
 
-    @media(min-width:800px) {
+    @media (min-width: 800px) {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
 
         .profile-pic {
-            width: 25vh;
-            height: 25vh;
+            width: 140px;
+            height: 140px;
         }
 
-        .profile-name { font-size: 10vw }
+        .profile-name {
+            padding-left: 1vw;
+            font-size: 10vw;
+        }
     }
 }
-
 </style>
