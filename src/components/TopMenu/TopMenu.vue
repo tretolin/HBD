@@ -1,5 +1,10 @@
 <script>
 
+window.addEventListener('scroll', ()=> {
+    let topMenu = document.querySelector('.top-menu');
+    topMenu.classList.toggle('sticky' , window.scrollY > 0)
+    console.log('S:'+window.scrollY);
+})
 
 </script>
 <template>
@@ -11,11 +16,7 @@
             <div>Portfolio</div>
         </div>
         <div class="menu-toggle">
-            <img class="svg" src="../../assets/menu-dots.svg" alt="">
-            <!-- <svg class="svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M8 12H8.00901M12.0045 12H12.0135M15.991 12H16"  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="12" cy="12" r="10"  stroke-width="1.5"/>
-            </svg> -->
+            <img class="svg" src="../../assets/menu-dots.svg">
         </div>
     </div>
 </template>

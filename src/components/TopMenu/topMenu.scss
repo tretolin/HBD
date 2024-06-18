@@ -1,16 +1,30 @@
 .top-menu {
-    // border: 1px solid;
-    background-color: teal;
-    color:white;
-    padding: 5px 2%;
+    &.sticky {
+        position: fixed;
+        top: 0;
+        width: -webkit-fill-available;
+        background-color: rgb(247, 231, 205);
+        -webkit-box-shadow: 1px 7px 5px -3px rgba(0,0,0,0.23);
+        -moz-box-shadow: 1px 7px 5px -3px rgba(0,0,0,0.23);
+        box-shadow: 1px 7px 5px -3px rgba(0,0,0,0.23);
+        
+    }
+
+    padding: 12px;
+    background-color: #ffffff00;
+    transition: all 0.5s linear;
+
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    .svg { stroke: white !important }
+    .svg {
+        stroke: rgb(154, 58, 58) !important;
+    }
     .brand-logo,
     .menu-toggle {
         display: flex;
         align-items: center;
+        cursor:pointer;
     }
     .brand-logo {
         font-weight: bold;
@@ -31,7 +45,9 @@
     /* Media quieries */
     @media (min-width: 350px) {
         .top-menu {
-            padding: 0;
+            -webkit-box-shadow: 1px 7px 5px -3px rgba(0,0,0,0.23);
+            -moz-box-shadow: 1px 7px 5px -3px rgba(0,0,0,0.23);
+            box-shadow: 1px 7px 5px -3px rgba(0,0,0,0.23);
         }
         .menu-toggle {
             display: none;
