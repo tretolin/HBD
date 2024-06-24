@@ -17,7 +17,7 @@
             &.visible {
                 opacity: 1;
             }
-            background-image: url("https://media.istockphoto.com/id/1222357475/vector/image-preview-icon-picture-placeholder-for-website-or-ui-ux-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=KuCo-dRBYV7nz2gbk4J9w1WtTAgpTdznHu55W9FjimE=");
+            background-image: url();
         }
     }
 
@@ -43,6 +43,14 @@
     @media (min-width: 1200px) and (max-width: 1400px) {
         & {
             grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 20vw);
+        }
+    }
+
+    /* Big */
+    @media (min-width: 1400px) {
+        & {
+            grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(6, 20vw);
         }
     }

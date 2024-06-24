@@ -1,13 +1,9 @@
 <script setup>
 import "../../directives/lazy-load-background.js";
 import { ref } from "vue";
-import { urls } from "./images.js";
-
+import { urls } from "../../data/images.js";
+import ProjectItem from '../ProjectItem/ProjectItem.vue'
 const imagesList = ref(urls);
-
-// const loadImages = () => {
-//     imagesList.value = urls;
-// }
 
 </script>
 <template>
@@ -15,13 +11,8 @@ const imagesList = ref(urls);
 <div id="gallery">
     <div class="gallery-container">
     
-        <div class="gallery-item"
-        v-for="(image, index) in imagesList"
-        :key="index"
-        >
-            <div class="image-container lazy-background"
-                :style="{ backgroundImage: 'url(' + image.url + ')' }"
-            </div>
+        <div class="gallery-item" v-for="(image, index) in imagesList" :key="index">
+            <ProjectItem :image="image"/>
         </div>
     
     </div>
