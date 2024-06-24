@@ -9,8 +9,8 @@ export default {
 
 <template>
     <TopMenu />
-    <Profile/>
-    <Gallery/>
+    <Profile />
+    <Gallery />
 </template>
 <style>
 body {

@@ -1,0 +1,49 @@
+#gallery .gallery-container {
+    padding: 5vw;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, auto);
+
+    .gallery-item {
+        overflow: hidden;
+
+        .image-container {
+            background-color: cornsilk;
+            background-size: cover;
+            opacity: 0;
+            transition: 1s;
+            height: 100%;
+            &.visible {
+                opacity: 1;
+            }
+            background-image: url("https://media.istockphoto.com/id/1222357475/vector/image-preview-icon-picture-placeholder-for-website-or-ui-ux-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=KuCo-dRBYV7nz2gbk4J9w1WtTAgpTdznHu55W9FjimE=");
+        }
+    }
+
+    /* XSmall */
+    @media (max-width: 500px) {
+        & {
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 90vw);
+            gap: 5px;
+            padding: 1vh;
+        }
+    }
+
+    /* Small */
+    @media (min-width: 500px) and (max-width: 1200px) {
+        & {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(6, 30vw);
+        }
+    }
+
+    /* Medium */
+    @media (min-width: 1200px) and (max-width: 1400px) {
+        & {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 20vw);
+        }
+    }
+}
