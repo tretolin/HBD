@@ -12,7 +12,7 @@ that I did. Filling with random phrases like los pollos locos`);
             <img src="../../assets/profile.jpg" alt="" />
         </div>
         <h1 class="profile-name no-margin">{{ name }}</h1>
-        <p class="text-center size-regular">
+        <p class="description text-center size-regular">
             {{ description }}
         </p>
     </div>
@@ -34,6 +34,10 @@ that I did. Filling with random phrases like los pollos locos`);
         display: flex;
         width: 25vw;
         height: 25vw;
+    }
+
+    .description {
+        font-size: 2vh;
     }
 
     @media (min-width: 800px) {
