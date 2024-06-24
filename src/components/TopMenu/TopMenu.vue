@@ -3,7 +3,6 @@
 window.addEventListener('scroll', ()=> {
     let topMenu = document.querySelector('.top-menu');
     topMenu.classList.toggle('sticky' , window.scrollY > 0)
-    console.log('S:'+window.scrollY);
 })
 
 </script>
