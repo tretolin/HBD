@@ -1,10 +1,8 @@
 <script>
-
-window.addEventListener('scroll', ()=> {
-    let topMenu = document.querySelector('.top-menu');
-    topMenu.classList.toggle('sticky' , window.scrollY > 0)
-})
-
+window.addEventListener("scroll", () => {
+    let topMenu = document.querySelector(".top-menu");
+    topMenu.classList.toggle("sticky", window.scrollY > 0);
+});
 </script>
 <template>
     <div class="top-menu">
@@ -15,10 +13,10 @@ window.addEventListener('scroll', ()=> {
             <div>Portfolio</div>
         </div>
         <div class="menu-toggle">
-            <img class="svg" src="../../assets/menu-dots.svg">
+            <img class="svg" src="../../assets/menu-dots.svg" />
         </div>
     </div>
 </template>
 <style>
-@import url('./topMenu.scss');
+@import url("./topMenu.scss");
 </style>
