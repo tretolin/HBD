@@ -18,42 +18,5 @@ that I did. Filling with random phrases like los pollos locos`);
     </div>
 </template>
 <style>
-.profile-presentation {
-    margin: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: 1px solid tomato; */
-    div,
-    h1 {
-        border: 0px solid black;
-    }
-
-    .profile-pic {
-        display: flex;
-        width: 25vw;
-        height: 25vw;
-    }
-
-    .description {
-        font-size: 2vh;
-    }
-
-    @media (min-width: 800px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-
-        .profile-pic {
-            width: 140px;
-            height: 140px;
-        }
-
-        .profile-name {
-            padding-left: 1vw;
-            font-size: 10vw;
-        }
-    }
-}
+@import url('./Profile.scss');
 </style>
