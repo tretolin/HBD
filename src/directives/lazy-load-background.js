@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", function () {
         ) {
             entries.forEach(function (entry) {
                 if (entry.isIntersecting) {
-                    console.log(entry.target, 'visible')
                     entry.target.classList.add("visible");
                     lazyBackgroundObserver.unobserve(entry.target);
                 }
