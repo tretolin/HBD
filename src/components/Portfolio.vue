@@ -2,14 +2,12 @@
 import TopMenu from "./TopMenu/TopMenu.vue";
 import Profile from "./Profile/Profile.vue";
 import Gallery from "./Gallery/Gallery.vue";
-import MenuMobile from "./Navigation/MenuMobile.vue";
 export default {
-    components: { TopMenu, Profile, Gallery, MenuMobile },
+    components: { TopMenu, Profile, Gallery },
 };
 </script>
 
 <template>
-    <MenuMobile/>
     <TopMenu />
     <Profile />
     <Gallery />
