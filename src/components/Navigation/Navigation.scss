@@ -1,5 +1,3 @@
-$primary-color: tomato;
-
 .menu-options {
     list-style: none;
     display: flex;
@@ -54,7 +52,7 @@ $primary-color: tomato;
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 449px) {
     .menu-options {
         display: none;
     }
@@ -68,23 +66,5 @@ $primary-color: tomato;
             padding: 2vh 0;
             font-size: 5vh;
         }
-    }
-}
-
-// Links
-a {
-    color: black;
-    text-decoration: none;
-    opacity: 0.6;
-    transition: all 0.3s;
-    &:hover {
-        text-decoration: underline;
-        color:$primary-color;
-        opacity: 1;
-    }
-    &.selected {
-        font-weight: bold;
-        opacity: 1;
-        color: $primary-color;
     }
 }

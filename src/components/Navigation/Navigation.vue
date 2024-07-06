@@ -1,24 +1,22 @@
 <script setup>
-import { ref, defineComponent } from "vue";
+import { ref } from "vue";
 import ToggleMenu from "./ToggleMenu.vue";
+import OptionLink from "./OptionLink.vue";
 
 const menuOptions = ref([
-    { title: "Portfolio", path: "" },
-    { title: "Contact", path: "" },
-    { title: "About", path: "" },
+    { title: "Portfolio", href: "", arialLabel: "Portfolio" },
+    { title: "Contact", href: "Concat me" },
+    { title: "About", href: "About me" },
 ]);
 </script>
 
 <template>
-    <div class="menu-options">
+    <nav class="menu-options">
         <a href=""></a>
-        <a
+        <OptionLink
             v-for="(link, index) in menuOptions"
-            class="navigation-link"
-            :key="index"
-            href="link.path"
-            >{{ link.title }}</a
-        >
-    </div>
+            :data="link"
+        />
+    </nav>
     <ToggleMenu :options="menuOptions" />
 </template>
