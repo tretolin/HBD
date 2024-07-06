@@ -1,11 +1,10 @@
 <script setup>
 import { ref } from "vue";
-import OptionLink from './OptionLink.vue'
+import OptionLink from "./OptionLink.vue";
 
-const props = defineProps(['options']);
-console.log(props.options)
+const props = defineProps(["options"]);
+console.log(props.options);
 function toggleMenu() {
-    console.log("toggle", isOpen.value);
     isOpen.value = !isOpen.value;
 }
 
@@ -19,7 +18,11 @@ const menuOptions = ref([
 <template>
     <div class="menu-toggle">
         <div class="toggle-button">
-            <img class="pointer" :onClick="toggleMenu" src="../../assets/menu-dots.svg" />
+            <img
+                class="pointer"
+                :onClick="toggleMenu"
+                src="../../assets/menu-dots.svg"
+            />
             <div v-if="isOpen" class="float-menu">
                 <div class="close-menu pointer" :onClick="toggleMenu">X</div>
                 <nav class="float-navigation">
