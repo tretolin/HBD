@@ -1,6 +1,8 @@
 <script setup>
 import { ref } from "vue";
 
+const props = defineProps(['options']);
+console.log(props.options)
 function toggleMenu() {
     console.log("toggle", isOpen.value);
     isOpen.value = !isOpen.value;
@@ -20,9 +22,8 @@ const menuOptions = ref([
             <div v-if="isOpen" class="float-menu">
                 <div class="close-menu pointer" :onClick="toggleMenu">X</div>
                 <nav class="float-navigation">
-                    <a>Info of</a>
-                    <a>Profile of</a>
-                    <a>About</a>
+                    <a v-for="(option, index) in props.options"
+                    href="{{ options.path }}">{{option.title}}</a>
                 </nav>
             </div>
         </div>
