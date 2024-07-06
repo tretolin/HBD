@@ -18,28 +18,12 @@
     flex-flow: row;
     justify-content: space-between;
 
-    .brand-logo,
-    .menu-toggle {
+    .brand-logo {
         display: flex;
         align-items: center;
         cursor: pointer;
-    }
-    .brand-logo {
         font-weight: bold;
         font-size: 2.5vh;
-    }
-    .menu-options {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-    }
-    .menu-toggle {
-        img {
-            width: 100%;
-            max-height: 28px;
-        }
     }
 
     /* Media quieries */
@@ -49,31 +33,5 @@
             -moz-box-shadow: 1px 7px 4px -5px rgba(0, 0, 0, 0.13);
             box-shadow: 1px 7px 4px -5px rgba(0, 0, 0, 0.13);
         }
-        .menu-toggle {
-            display: none;
-        }
-    }
-
-    @media (max-width: 350px) {
-        .menu-options {
-            display: none;
-        }
-    }
-}
-
-// Links
-a {
-    color: black;
-    text-decoration: none;
-    opacity: .6;
-    transition: all .3s;
-    &:hover {
-        text-decoration: underline;
-        opacity:1;
-    }
-    &.selected {
-        font-weight: bold;
-        opacity: 1;
-        color: rgb(68, 95, 193);
     }
 }
