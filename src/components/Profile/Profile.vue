@@ -3,8 +3,7 @@ import { ref } from "vue";
 import SocialMedia from './SocialMedia.vue'
 
 const name = ref("Luis Javier");
-const description = ref(`Vengo del planeta Nibiru y sutilmente me
-apoderaré de toda la raza humana sin que ni siquiera lo noten`);
+const description = ref(`Soy Luis, soy programador`);
 </script>
 <template>
     <div class="profile-presentation">

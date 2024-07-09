@@ -59,6 +59,9 @@ function asset(file) {
         &:hover {
             scale:1.2;
         }
+        img {
+            width:100%;
+        }
     }
 }
 </style>
