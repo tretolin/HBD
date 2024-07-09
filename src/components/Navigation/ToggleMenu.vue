@@ -24,18 +24,31 @@ const menuOptions = ref([
                 src="../../assets/menu-dots.svg"
                 draggable="false"
             />
-            <div v-if="isOpen" class="float-menu">
-                <div class="close-menu pointer" :onClick="toggleMenu">X</div>
-                <nav class="float-navigation">
-                    <OptionLink
-                        v-for="(link, index) in menuOptions"
-                        :data="link"
-                    />
-                </nav>
-            </div>
+            <transition name="fade">
+                <div v-if="isOpen" class="float-menu">
+                    <div class="close-menu pointer" :onClick="toggleMenu">X</div>
+                        <nav class="float-navigation">
+                            <OptionLink
+                                v-for="(link, index) in menuOptions"
+                                :data="link"
+                            />
+                        </nav>
+                </div>
+            </transition>
         </div>
     </div>
 </template>
 <style>
 @import "./Navigation.scss";
+
+.fade-enter-active, .fade-leave-active {
+    transition: all .3s ease-in-out;
+    opacity:1;
+    
+}
+.fade-enter-from, .fade-leave-to {
+    opacity: 0;
+    top: 0;
+}
+
 </style>

@@ -10,7 +10,7 @@ window.addEventListener("scroll", () => {
 </script>
 <template>
     <div class="top-menu">
-        <div class="brand-logo">Brandingname</div>
+        <div class="brand-logo">Luis Javier</div>
         <Navigation />
     </div>
 </template>
