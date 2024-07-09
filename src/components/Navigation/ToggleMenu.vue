@@ -22,6 +22,7 @@ const menuOptions = ref([
                 class="pointer"
                 :onClick="toggleMenu"
                 src="../../assets/menu-dots.svg"
+                draggable="false"
             />
             <div v-if="isOpen" class="float-menu">
                 <div class="close-menu pointer" :onClick="toggleMenu">X</div>

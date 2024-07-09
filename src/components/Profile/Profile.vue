@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import SocialMedia from './SocialMedia.vue'
 
 const name = ref("Luis Javier");
 const description = ref(`Some things about me and some things
@@ -12,6 +13,7 @@ that I did. Filling with random phrases like los pollos locos`);
             <img src="../../assets/profile.jpg" alt="" />
         </div>
         <h1 class="profile-name no-margin">{{ name }}</h1>
+        <SocialMedia/>
         <p class="description text-center size-regular">
             {{ description }}
         </p>
