@@ -3,7 +3,6 @@ import { ref } from "vue";
 import OptionLink from "./OptionLink.vue";
 
 const props = defineProps(["options"]);
-console.log(props.options);
 function toggleMenu() {
     isOpen.value = !isOpen.value;
 }

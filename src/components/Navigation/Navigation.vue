@@ -4,9 +4,9 @@ import ToggleMenu from "./ToggleMenu.vue";
 import OptionLink from "./OptionLink.vue";
 
 const menuOptions = ref([
-    { title: "Portfolio", href: "", arialLabel: "Portfolio" },
-    { title: "Contact", href: "Concat me" },
-    { title: "About", href: "About me" },
+    { title: "Portfolio", href: "/", arialLabel: "Portfolio" },
+    { title: "Contact", href: "/contact" },
+    { title: "About", href: "/about" },
 ]);
 </script>
 

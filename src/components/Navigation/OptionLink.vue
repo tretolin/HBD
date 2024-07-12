@@ -2,11 +2,10 @@
 const props = defineProps(["data"]);
 </script>
 <template>
-    <a class="navigation-link pointer"
+
+    <router-link class="navigation-link pointer"
     :arial-label="props.data.arialLabel"
-    :href="props.data.href">
-        {{ props.data.title }}</a
-    >
+    :to="props.data.href"> {{ props.data.title }}</router-link>
 </template>
 <style>
 @import url('./OptionLink.scss');
