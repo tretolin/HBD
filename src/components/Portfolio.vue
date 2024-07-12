@@ -1,18 +1,16 @@
-<script>
+<script setup>
 import TopMenu from "./TopMenu/TopMenu.vue";
-import Profile from "./Profile/Profile.vue";
-import Gallery from "./Gallery/Gallery.vue";
-export default {
-    components: { TopMenu, Profile, Gallery },
-};
 </script>
 
 <template>
     <TopMenu />
-    <Profile />
-    <Gallery />
+    <transition name="slide-fade">
+        <router-view></router-view>
+    </transition>
 </template>
 <style>
+@import url("../styles/pages-transition.scss");
+
 body {
     color: rgb(55, 55, 55);
     margin: 0;
