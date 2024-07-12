@@ -6,7 +6,7 @@
     align-items: center;
     max-width: 50vw;
     margin: auto;
-    /* border: 1px solid tomato; */
+    padding-bottom: 4vw;
     div,
     h1 {
         font-size: 3.8vh;
@@ -25,12 +25,12 @@
     }
 
     .description {
-        font-size: 2vh;
+        font-size: 3vh;
         max-width: 70%;;
     }
 
     @media (min-width: 800px) {
-        flex-direction: row;
+        // flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
 
@@ -41,8 +41,12 @@
 
         .profile-name {
             padding-left: 1vw;
-            font-size: 8vw;
+            font-size: 5vw;
             line-height: 8vw;
+        }
+
+        .description {
+            font-size:4vh;
         }
     }
 

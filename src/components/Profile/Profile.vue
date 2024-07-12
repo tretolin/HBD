@@ -13,9 +13,9 @@ const description = ref(`Soy Luis, soy programador`);
         <h1 class="profile-name no-margin">{{ name }}</h1>
         <h2>Frontend Developer</h2>
         <SocialMedia/>
-        <p class="description text-center size-regular">
+        <!-- <p class="description text-center size-regular">
             {{ description }}
-        </p>
+        </p> -->
     </div>
 </template>
 <style>
