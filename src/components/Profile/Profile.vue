@@ -8,7 +8,7 @@ const description = ref(`Soy Luis, soy programador`);
 <template>
     <div class="profile-presentation">
         <div class="profile-pic rounded">
-            <img src="../../assets/profile.jpg" alt="" />
+            <img loading="lazy" src="../../assets/profile.jpg" alt="profile-pic" />
         </div>
         <h1 class="profile-name no-margin">{{ name }}</h1>
         <h2>Frontend Developer</h2>
