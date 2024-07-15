@@ -16,6 +16,7 @@ const menuOptions = ref([
         <OptionLink
             v-for="(link, index) in menuOptions"
             :data="link"
+            draggable="false"
         />
     </nav>
     <ToggleMenu :options="menuOptions" />
