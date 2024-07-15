@@ -1,6 +1,5 @@
 <script setup>
-import "../../directives/lazy-load-background.js";
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
 import { urls } from "../../data/images.js";
 import ProjectItem from '../ProjectItem/ProjectItem.vue'
 const imagesList = ref(urls);
