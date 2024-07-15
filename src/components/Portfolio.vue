@@ -4,8 +4,10 @@ import TopMenu from "./TopMenu/TopMenu.vue";
 
 <template>
     <TopMenu />
-    <transition name="slide-fade">
-        <router-view></router-view>
+    <transition name="slide-fade" mode="out-in">
+        <router-view v-slot="{ Component }">
+                <component :is="Component" />
+        </router-view>
     </transition>
 </template>
 <style>
