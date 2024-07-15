@@ -4,5 +4,8 @@ import Gallery from "../components/Gallery/Gallery.vue";
 </script>
 <template>
     <Profile />
-    <Gallery />
+    <v-slot>
+        <Gallery/>
+    </v-slot>
+
 </template>
