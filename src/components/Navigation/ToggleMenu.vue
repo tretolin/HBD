@@ -8,11 +8,7 @@ function toggleMenu() {
 }
 
 const isOpen = ref(false);
-const menuOptions = ref([
-    { title: "Portfolio", path: "" },
-    { title: "Contact", path: "" },
-    { title: "About", path: "" },
-]);
+const menuOptions = ref(props.options);
 </script>
 <template>
     <div class="menu-toggle">
@@ -25,13 +21,16 @@ const menuOptions = ref([
             />
             <transition name="fade">
                 <div v-if="isOpen" class="float-menu">
-                    <div class="close-menu pointer" :onClick="toggleMenu">X</div>
-                        <nav class="float-navigation">
-                            <OptionLink
-                                v-for="(link, index) in menuOptions"
-                                :data="link"
-                            />
-                        </nav>
+                    <div class="close-menu pointer" :onClick="toggleMenu">
+                        X
+                    </div>
+                    <nav class="float-navigation">
+                        <OptionLink
+                            v-for="(link, index) in menuOptions"
+                            :data="link"
+                            :onClick="toggleMenu"
+                        />
+                    </nav>
                 </div>
             </transition>
         </div>
@@ -40,14 +39,14 @@ const menuOptions = ref([
 <style>
 @import "./Navigation.scss";
 
-.fade-enter-active, .fade-leave-active {
-    transition: all .3s ease-in-out;
-    opacity:1;
-    
+.fade-enter-active,
+.fade-leave-active {
+    transition: all 0.6s ease-in-out;
+    opacity: 1;
 }
-.fade-enter-from, .fade-leave-to {
+.fade-enter-from,
+.fade-leave-to {
     opacity: 0;
     top: 0;
 }
-
 </style>
