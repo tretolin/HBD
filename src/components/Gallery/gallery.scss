@@ -4,7 +4,6 @@
     gap: 0.5vh;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, auto);
-
     .gallery-item {
         overflow: hidden;
 
@@ -26,6 +25,7 @@
         & {
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(6, 90vw);
+            grid-auto-rows: 90vw;
             gap: 5px;
             padding: 1vh;
         }
@@ -35,9 +35,19 @@
     @media (min-width: 500px) and (max-width: 1200px) {
         & {
             grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(6, 30vw);
+            grid-template-rows: repeat(auto-fill, 30vw);
+            grid-auto-rows: 30vw;
         }
     }
+    
+    /* Small */
+    @media (min-width: 501px) and (max-width: 720px) {
+        & {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(auto-fill, 50vw);
+                grid-auto-rows: 50vw;
+            }
+        }
 
     /* Medium */
     @media (min-width: 1200px) and (max-width: 1400px) {
@@ -52,6 +62,7 @@
         & {
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: repeat(6, 17.8vw);
+            grid-auto-rows: 17.8vw;
         }
     }
 }
