@@ -7,6 +7,8 @@
     max-width: 50vw;
     margin: auto;
     padding-bottom: 4vw;
+    opacity:1;
+    transition: opacity ease-in .2s;
     div,
     h1 {
         font-size: 3.8vh;
@@ -16,6 +18,9 @@
     h2 {
         margin: 0 1vw 2.5vw;
         font-size: 2.5vw;
+    }
+    &.hide {
+        opacity: 0;
     }
 
     .profile-pic {
