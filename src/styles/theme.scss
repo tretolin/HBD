@@ -1,0 +1,34 @@
+$primary-color: #008000;
+$secondary-color:rgb(228, 222, 59);
+$background-color:#b9c09d;
+
+$main-font-color: white;
+:root {
+    --main-color: white
+    --primary-color: green;
+    --secondary-color: rgb(47, 151, 28);
+    --link-color: #333;
+    --background-color:rgb(69, 129, 94);
+    --background-secondary:rgb(200, 216, 189);;
+
+    --main-text-color:#423d37;
+
+    // background-color: var(--background-color);
+    color: var(--main-text-color);
+
+    ::selection {
+        background-color: var(--secondary-color);
+        color: var(--background-secondary);
+    }
+
+    /* Para navegadores que no soportan ::selection */
+    ::-moz-selection {
+        background-color: yellow;
+        color: red;
+    }
+
+    body {
+        margin: 0;
+        background-color: $background-color;
+    }
+}
