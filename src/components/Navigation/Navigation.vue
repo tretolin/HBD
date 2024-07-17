@@ -12,7 +12,6 @@ const menuOptions = ref([
 
 <template>
     <nav class="menu-options">
-        <a href=""></a>
         <OptionLink
             v-for="(link, index) in menuOptions"
             :data="link"
