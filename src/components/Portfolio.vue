@@ -13,5 +13,5 @@ import TopMenu from "./TopMenu/TopMenu.vue";
     </transition>
 </template>
 <style>
-@import url("../styles/pages-transition.scss");
+@import url("@styles/pages-transition.scss");
 </style>
