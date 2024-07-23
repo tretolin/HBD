@@ -1,34 +1,28 @@
-$primary-color: #008000;
-$secondary-color:rgb(228, 222, 59);
-$background-color:#b9c09d;
+
+// Color Theme
+$primary-color: #d5d5bf;
+$secondary-color: #c58080;
+$text-color: #444;
+$link-color: #446677;
+
+// Text
 
 $main-font-color: white;
 :root {
-    --main-color: white
-    --primary-color: green;
-    --secondary-color: rgb(47, 151, 28);
-    --link-color: #333;
-    --background-color:rgb(69, 129, 94);
-    --background-secondary:rgb(200, 216, 189);;
-
-    --main-text-color:#423d37;
-
-    // background-color: var(--background-color);
-    color: var(--main-text-color);
-
     ::selection {
-        background-color: var(--secondary-color);
-        color: var(--background-secondary);
+        background-color: darken($primary-color, 25%);
+        color: $primary-color;
     }
 
     /* Para navegadores que no soportan ::selection */
     ::-moz-selection {
-        background-color: yellow;
-        color: red;
+        background-color: darken($primary-color, 25%);
+        color: $primary-color;
     }
 
     body {
         margin: 0;
-        background-color: $background-color;
+        color: $text-color;
+        background-color: $primary-color;
     }
 }

@@ -1,0 +1,26 @@
+@import '../../styles/theme.scss';
+
+.theme-pallete {
+    display: flex;
+    gap:3px;
+    .block {
+        display: inline-block;
+        border: 1px solid;
+        width: 30px;
+        height: 30px;
+        &
+        .primary {
+            background: $primary-color;
+        }
+        &.secondary {
+            background-color: $secondary-color;
+        }
+        &.link {
+            background-color: $link-color;
+                &.active {
+                    background-color: lighten($link-color, 20%);
+                }
+        }
+
+    }
+}
