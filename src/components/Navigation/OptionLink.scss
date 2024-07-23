@@ -8,22 +8,22 @@ nav {
         }
 
         &.navigation-link {
+            font-weight: bold;
             text-decoration: none;
             opacity: 1;
             transition: all 0.3s;
             &:hover {
                 text-decoration: underline;
-                color: var(--secondary-color);
+                color: $secondary-color;
                 opacity: 1;
             }
             &.selected {
-                font-weight: bold;
                 opacity: 1;
-                color: var(--primary-color);
+                color: $primary-color;
             }
             &.router-link-active {
                 font-weight: bold;
-                color: var(--secondary-color);
+                color: $secondary-color;
             }
         }
     }
