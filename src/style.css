@@ -26,3 +26,7 @@
 .pointer {
   cursor: pointer;
 }
+
+body::-webkit-scrollbar {
+  display: none;
+}

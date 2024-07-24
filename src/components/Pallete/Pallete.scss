@@ -1,16 +1,14 @@
-@import '@styles/theme.scss';
+@import "@styles/theme.scss";
 
 .theme-pallete {
     display: flex;
-    padding: 0 0 2vw 0;
-    gap:0px;
+    gap: 0px;
     .block {
         display: inline-block;
         border: 1px solid;
         width: 20px;
         height: 20px;
-        &
-        .primary {
+        & .primary {
             background: $primary-color;
         }
         &.secondary {
@@ -18,11 +16,12 @@
         }
         &.link {
             background-color: $link-color;
-                &.active {
-                    background-color: lighten($link-color, 20%);
-                }
+            &.active {
+                background-color: lighten($link-color, 20%);
+            }
         }
-        &.font { background-color: $main-font-color }
-
+        &.font {
+            background-color: $main-font-color;
+        }
     }
 }

@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from "vue";
 import Navigation from "../Navigation/Navigation.vue";
+import Pallete from "../Pallete/Pallete.vue";
 
 window.addEventListener("scroll", () => {
     let topMenu = document.querySelector(".top-menu");
@@ -10,7 +11,7 @@ window.addEventListener("scroll", () => {
 </script>
 <template>
     <div class="top-menu">
-        <div class="brand-logo">Luis Javier</div>
+        <div class="brand-logo"><Pallete/></div>
         <Navigation />
     </div>
 </template>

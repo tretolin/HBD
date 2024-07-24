@@ -17,7 +17,6 @@ const name = ref("Luis Javier");
         </div>
         <h1 class="profile-name no-margin">{{ name }}</h1>
         <h2>Frontend Developer</h2>
-        <Pallete/>
         <SocialMedia/>
         <!-- <p class="description text-center size-regular">
             {{ description }}

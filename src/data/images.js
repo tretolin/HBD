@@ -15,7 +15,4 @@ export const urls = [
     {
         url:'https://assets.justinmind.com/wp-content/uploads/2021/11/vibrant-web-design-portfolio-template.png'
     },
-    {
-        url:'https://edmullen.net/test/rc.jpg'
-    },
 ]
