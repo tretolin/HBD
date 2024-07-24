@@ -1,7 +1,9 @@
+@import '@styles/theme.scss';
+
 #gallery .gallery-container {
     padding: 0 2vw 1vh 2vh;
     display: grid;
-    gap: 0.5vh;
+    gap: $gap-gallery;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, auto);
     .gallery-item {

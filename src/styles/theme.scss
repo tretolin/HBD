@@ -4,10 +4,17 @@ $primary-color: #d5d5bf;
 $secondary-color: #c58080;
 $text-color: #444;
 $link-color: #446677;
+$main-font-color: #2e2929;
 
+$gap-gallery: 1vh;
 // Text
 
-$main-font-color: white;
+// Mixins
+@mixin rounded-hidden($radius: 2%) {
+    border-radius: $radius;
+    overflow: hidden;
+}
+
 :root {
     ::selection {
         background-color: darken($primary-color, 25%);
@@ -24,5 +31,6 @@ $main-font-color: white;
         margin: 0;
         color: $text-color;
         background-color: $primary-color;
+        color: $main-font-color;
     }
 }

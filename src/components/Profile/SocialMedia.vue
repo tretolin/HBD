@@ -62,7 +62,7 @@ function asset(file) {
     gap: 10px;
     .network {
         transition: scale 0.2s ease-in-out;
-        width: 6vw;
+        width: 4vw;
         &:hover {
             scale: 1.2;
         }
