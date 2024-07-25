@@ -4,14 +4,12 @@ import TopMenu from "./TopMenu/TopMenu.vue";
 
 <template>
     <TopMenu />
-    <transition name="slide-fade" mode="out-in">
-        <router-view v-slot="{ Component }">
-            <custom-element>
-                <component :is="Component" />
-            </custom-element>
-        </router-view>
-    </transition>
+    <router-view v-slot="{ Component }">
+        <transition name="slide-fade">
+            <component :is="Component" />
+        </transition>
+    </router-view>
 </template>
 <style>
-@import url("@styles/pages-transition.scss");
+@import url("../styles/pages-transition.scss");
 </style>

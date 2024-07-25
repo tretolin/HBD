@@ -3,7 +3,16 @@ import vue from "@vitejs/plugin-vue";
 import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
-    plugins: [vue()],
+    plugins: [
+        vue({
+            template: {
+                compilerOptions: {
+                    // Treat <custom-element> as a custom element
+                    isCustomElement: (tag) => tag === "custom-element",
+                },
+            },
+        }),
+    ],
     resolve: {
         alias: {
             "@": path.resolve(__dirname, "src"),
