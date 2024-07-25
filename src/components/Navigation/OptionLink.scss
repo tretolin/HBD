@@ -1,8 +1,8 @@
-@import '@styles/theme.scss';
+@import "@styles/theme.scss";
 nav {
     a {
         color: var(--link-color);
-        font-size: 2.1vw;
+        font-size: 20px;
         &.router-link-active {
             color: var(--primary-color); /* Color para cualquier ruta activa */
         }

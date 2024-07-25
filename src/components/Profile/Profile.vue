@@ -3,15 +3,12 @@ import { ref, onMounted } from "vue";
 import SocialMedia from './SocialMedia.vue'
 import Pallete from "../Pallete/Pallete.vue";
 let isHide = ref(true)
-onMounted(() => {
-    setTimeout(() => { isHide.value = false }, 500)
-})
 
 const name = ref("Luis Javier");
 // const description = ref(`Soy Luis, soy programador`);
 </script>
 <template>
-    <div class="profile-presentation" :class="[isHide ? 'hide' : '']">
+    <div class="profile-presentation">
         <div class="profile-pic rounded">
             <img loading="lazy" src="../../assets/profile.jpg" alt="profile-pic" />
         </div>

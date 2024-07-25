@@ -1,23 +1,21 @@
 .profile-presentation {
-    // margin: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // max-width: 50vw;
     margin: auto;
     padding-bottom: 4vw;
-    opacity:1;
-    transition: opacity ease-in .2s;
+    opacity: 1;
+    transition: opacity ease-in 0.2s;
     div,
     h1 {
-        font-size: 3.8vh;
+        font-size: w;
         border: 0px solid black;
         text-align: center;
     }
     h2 {
         margin: 0 1vw 2.5vw;
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     &.hide {
         opacity: 0;
@@ -31,7 +29,7 @@
 
     .description {
         font-size: 3vh;
-        max-width: 70%;;
+        max-width: 70%;
     }
 
     @media (min-width: 800px) {
@@ -51,7 +49,7 @@
         }
 
         .description {
-            font-size:4vh;
+            font-size: 4vh;
         }
     }
 

@@ -19,7 +19,7 @@ const showImage = () => (show.value = false);
 onMounted(() => {
     setTimeout(() => {
         show.value = true;
-    }, 500);
+    }, 300);
 
     showImage();
 });
