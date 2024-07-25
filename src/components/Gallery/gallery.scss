@@ -1,4 +1,4 @@
-@import '@styles/theme.scss';
+@import "@styles/theme.scss";
 
 #gallery .gallery-container {
     padding: 0 2vw 1vh 2vh;
@@ -7,10 +7,11 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, auto);
     .gallery-item {
+        @include rounded-hidden;
+        transition: box-shadow 0.2s ease-in-out, transform 0.08s ease-in-out;
         overflow: hidden;
-
         .image-container {
-            background-color: cornsilk;
+            background-color: transparent;
             background-size: cover;
             opacity: 0;
             transition: 1s;
@@ -19,6 +20,12 @@
                 opacity: 1;
             }
             background-image: url();
+        }
+        &:hover {
+            transform: scale(1.025);
+            box-shadow: 4px 6px 7px -3px rgba(0, 0, 0, 0.42);
+            -webkit-box-shadow: 4px 6px 7px -3px rgba(0, 0, 0, 0.42);
+            -moz-box-shadow: 4px 6px 7px -3px rgba(0, 0, 0, 0.42);
         }
     }
 
@@ -41,15 +48,15 @@
             grid-auto-rows: 30vw;
         }
     }
-    
+
     /* Small */
     @media (min-width: 501px) and (max-width: 720px) {
         & {
-                grid-template-columns: repeat(2, 1fr);
-                grid-template-rows: repeat(auto-fill, 50vw);
-                grid-auto-rows: 50vw;
-            }
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(auto-fill, 50vw);
+            grid-auto-rows: 50vw;
         }
+    }
 
     /* Medium */
     @media (min-width: 1200px) and (max-width: 1400px) {

@@ -1,13 +1,11 @@
-
 // Color Theme
-$primary-color: #d5d5bf;
-$secondary-color: #c58080;
+$primary-color: #f1f1e9;
+$secondary-color: #f22c16;
 $text-color: #444;
 $link-color: #446677;
 $main-font-color: #2e2929;
 
 $gap-gallery: 1vh;
-// Text
 
 // Mixins
 @mixin rounded-hidden($radius: 2%) {
@@ -16,6 +14,9 @@ $gap-gallery: 1vh;
 }
 
 :root {
+    --primary-color: #{$primary-color};
+    --secondary-color: #{$secondary-color};
+
     ::selection {
         background-color: darken($primary-color, 25%);
         color: $primary-color;
@@ -26,11 +27,10 @@ $gap-gallery: 1vh;
         background-color: darken($primary-color, 25%);
         color: $primary-color;
     }
+}
 
-    body {
-        margin: 0;
-        color: $text-color;
-        background-color: $primary-color;
-        color: $main-font-color;
-    }
+body {
+    margin: 0;
+    background-color: $primary-color;
+    color: $main-font-color;
 }

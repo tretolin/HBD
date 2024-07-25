@@ -15,21 +15,28 @@ const props = defineProps({
 });
 
 const showImage = () => (show.value = false);
+const showProject = (project) => {
+    console.log("%cProject: " + project.url, "color:lime");
+};
+
+let imageStyles = {
+    backgroundImage: "url(" + props.image.url + ")",
+};
 
 onMounted(() => {
     setTimeout(() => {
         show.value = true;
     }, 300);
-
     showImage();
 });
 </script>
 
 <template>
     <div
-        class="image-container"
+        @click="showProject(image)"
+        class="image-container shaddow"
         :class="['lazy-background', show ? 'visible' : '']"
-        :style="{ backgroundImage: 'url(' + image.url + ')' }"
+        :style="imageStyles"
     ></div>
 </template>
 

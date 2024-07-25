@@ -1,12 +1,12 @@
-@import '@styles/theme.scss';
+@import "@styles/theme.scss";
 
 .image-container {
     @include rounded-hidden;
-    background-color: cornsilk;
     background-size: cover;
     opacity: 0;
-    transition: 1s;
+    transition: opacity 1s;
     height: 100%;
+    cursor: pointer;
     &.visible {
         opacity: 1;
     }
