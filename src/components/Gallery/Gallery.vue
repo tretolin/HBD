@@ -1,6 +1,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import { urls } from "../../data/images.js";
+import { urls } from "../../data/projects.js";
 import ProjectItem from '../ProjectItem/ProjectItem.vue'
 const imagesList = ref(urls);
 
