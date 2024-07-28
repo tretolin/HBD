@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import { asset } from "../../utils/utils";
 
 const socialNetworks = ref([
     {
@@ -34,9 +35,6 @@ const socialNetworks = ref([
     },
 ]);
 
-function asset(file) {
-    return "/src/assets/icons/" + file;
-}
 </script>
 <template>
     <div class="social-media-container">
@@ -48,7 +46,7 @@ function asset(file) {
                 draggable="false"
             >
                 <img
-                    :src="asset(network.src)"
+                    :src="asset('/icons/'+network.src)"
                     :alt="network.name"
                     draggable="false"
                 />
