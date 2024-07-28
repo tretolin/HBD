@@ -33,7 +33,7 @@
     @media (max-width: 500px) {
         & {
             grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(6, 90vw);
+            grid-template-rows: repeat(auto-fill, 90vw);
             grid-auto-rows: 90vw;
             gap: 5px;
             padding: 1vh;
@@ -62,7 +62,7 @@
     @media (min-width: 1200px) and (max-width: 1400px) {
         & {
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(6, 20vw);
+            grid-template-rows: repeat(auto-fill, 20vw);
         }
     }
 
@@ -70,7 +70,7 @@
     @media (min-width: 1400px) {
         & {
             grid-template-columns: repeat(4, 1fr);
-            grid-template-rows: repeat(6, 20vw);
+            grid-template-rows: repeat(auto-fill, 20vw);
             grid-auto-rows: 17.8vw;
 
             max-width: 1200px;
