@@ -18,11 +18,7 @@
 
                 <div class="project-content">
                     <div v-for="(image, index) in project.urls" :key="index">
-                        <img
-                            class="lazy-load"
-                            :src="image"
-                            alt="Project Image"
-                        />
+                        <img :data-src="image" />
                     </div>
                 </div>
             </div>
