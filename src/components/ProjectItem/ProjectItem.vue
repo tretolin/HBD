@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from "vue";
+import { useRouter } from "vue-router";
 import { defineProps, onMounted } from "vue";
 
 let show = ref(false);
@@ -7,20 +8,24 @@ let show = ref(false);
 const defaultImage =
     "https://media.istockphoto.com/id/1222357475/vector/image-preview-icon-picture-placeholder-for-website-or-ui-ux-design-vector-illustration.jpg?s=612x612&w=0&k=20&c=KuCo-dRBYV7nz2gbk4J9w1WtTAgpTdznHu55W9FjimE=";
 const props = defineProps({
-    image: {
+    project: {
         type: Object,
         required: false,
         default: { url: defaultImage },
     },
 });
 
+// console.log('PROPS', props.project.id)
+const router = useRouter();
+
 const showImage = () => (show.value = false);
 const showProject = (project) => {
-    console.log("%cProject: " + project.url, "color:lime");
+    console.log(project.id);
+    router.push({ name: "project", params: { id: project.id } });
 };
 
 let imageStyles = {
-    backgroundImage: "url(" + props.image.url + ")",
+    backgroundImage: "url(" + props.project.url + ")",
 };
 
 onMounted(() => {
@@ -33,7 +38,7 @@ onMounted(() => {
 
 <template>
     <div
-        @click="showProject(image)"
+        @click="showProject(props.project)"
         class="image-container shaddow"
         :class="['lazy-background', show ? 'visible' : '']"
         :style="imageStyles"
