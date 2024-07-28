@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from "vue";
-import { useRouter } from "vue-router";
+import { useRouter } from "vue-router"; 
 import { defineProps, onMounted } from "vue";
 
 let show = ref(false);
@@ -15,17 +15,14 @@ const props = defineProps({
     },
 });
 
-// console.log('PROPS', props.project.id)
-const router = useRouter();
 
+const router = useRouter();
 const showImage = () => (show.value = false);
-const showProject = (project) => {
-    console.log(project.id);
-    router.push({ name: "project", params: { id: project.id } });
+const goToProject = (project) => { router.push({ name: 'project', params: {id: project.id} });
 };
 
 let imageStyles = {
-    backgroundImage: "url(" + props.project.url + ")",
+    backgroundImage: "url(" + props.project.urls[0] + ")",
 };
 
 onMounted(() => {
@@ -38,7 +35,7 @@ onMounted(() => {
 
 <template>
     <div
-        @click="showProject(props.project)"
+        @click="goToProject(props.project)"
         class="image-container shaddow"
         :class="['lazy-background', show ? 'visible' : '']"
         :style="imageStyles"
