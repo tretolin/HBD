@@ -1,8 +1,8 @@
 <script setup>
 import { ref, onMounted } from "vue";
-import { urls } from "../../data/projects.js";
+import { projects } from "../../data/projects.js";
 import ProjectItem from '../ProjectItem/ProjectItem.vue'
-const imagesList = ref(urls);
+const projectsList = ref(projects);
 
 </script>
 <template>
@@ -10,8 +10,8 @@ const imagesList = ref(urls);
 <div id="gallery">
     <div class="gallery-container">
     
-        <div class="gallery-item" v-for="(image, index) in imagesList" :key="index">
-            <ProjectItem :image="image"/>
+        <div class="gallery-item" v-for="(project, index) in projectsList" :key="index">
+            <ProjectItem :project="project"/>
         </div>
     
     </div>
