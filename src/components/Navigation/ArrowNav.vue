@@ -18,9 +18,9 @@ defineProps(["reverse"]);
 <style scoped>
 img {
     transition: opacity .3s ease-in-out;
-    opacity: .15;
+    opacity: .15 !important;
     &:hover {
-        opacity: 1;
+        opacity: 1 !important;
     }
     &.reverse {
         transform: rotate(180deg);

@@ -9,7 +9,9 @@
         padding: 2vw;
     }
     h2 {
+        text-align: center;
         font-size: 8vw;
+        line-height: 8vw;
     }
 }
 .project-detail {
@@ -28,7 +30,12 @@
             margin-bottom: 0;
         }
         img {
+            opacity: 1;
             width: 100%;
+            &.visible {
+                // height: auto;
+                opacity:1;
+            }
         }
     }
 }
