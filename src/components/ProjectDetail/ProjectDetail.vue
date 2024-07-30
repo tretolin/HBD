@@ -28,7 +28,7 @@
 
 <script setup>
 import { useRouter, useRoute } from "vue-router";
-import { ref, watch } from "vue";
+import { onMounted, ref, watch } from "vue";
 import { projects } from "@/data/projects.js";
 import ArrowNav from "@/components/Navigation/ArrowNav.vue";
 
@@ -39,20 +39,13 @@ let currentIndex = ref(0);
 let prev = ref();
 let next = ref();
 let project = null;
+
 projects.map((pr, index) => {
     if (parseInt(projectId.value) == pr.id) {
         currentIndex = index;
         project = pr;
     }
 });
-
-watch(
-    () => route.params.id,
-    (newId) => {
-        projectId.value = newId;
-        window.location.reload();
-    }
-);
 
 const goToProject = (project) => {
     router.push({ name: "project", params: { id: project.id } });
@@ -62,8 +55,22 @@ const prevNext = () => {
     prev = projects[currentIndex == 0 ? projects.length - 1 : currentIndex - 1];
     next = projects[currentIndex == projects.length - 1 ? 0 : currentIndex + 1];
 };
+
 prevNext();
+
+onMounted(() => {
+    window.lazyLoadImages ? window.lazyLoadImages() : false;
+});
+
+watch(
+    () => route.params.id,
+    (newId) => {
+        projectId.value = newId;
+        window.location.reload();
+    }
+);
 </script>
+
 <style>
 @import url("./ProjectDetail.scss");
 </style>

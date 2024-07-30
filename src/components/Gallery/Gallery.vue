@@ -1,5 +1,5 @@
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref } from "vue";
 import { projects } from "../../data/projects.js";
 import ProjectItem from '../ProjectItem/ProjectItem.vue'
 const projectsList = ref(projects);
