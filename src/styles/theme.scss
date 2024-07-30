@@ -29,6 +29,17 @@ $gap-gallery: 1vh;
     }
 }
 
+a.theme-link {
+    color: $link-color;
+    font-size: 20px;
+    &:hover {
+        color: $secondary-color !important;
+    }
+    &:visited {
+        color: $link-color;
+    }
+}
+
 body {
     margin: 0;
     background-color: $primary-color;
