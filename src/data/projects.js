@@ -9,7 +9,7 @@ export const projects = [
             "https://cdn.logojoy.com/wp-content/uploads/20201117162958/glo_banner-1-1536x768.jpg",
             "https://cdn.logojoy.com/wp-content/uploads/20201021101704/social-cover-2nd-960x1024.jpg",
         ],
-        description: "Versión Web de aplicación existente",
+        description: "Versión Web de aplicación existente para un projecto que neceistaba una migración de versión mobile a version werb",
     },
     {
         id: 2,
