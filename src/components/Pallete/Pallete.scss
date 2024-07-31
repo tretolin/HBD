@@ -1,13 +1,14 @@
 @import "@styles/theme.scss";
 
 .theme-pallete {
+    width:100%;
     display: flex;
     gap: 0px;
+    // border: 1px solid;
     .block {
         display: inline-block;
-        border: 1px solid;
-        width: 20px;
-        height: 20px;
+        width: 1vw;
+        height: 1.3vw;
         & .primary {
             background: $primary-color;
         }
