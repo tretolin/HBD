@@ -13,8 +13,9 @@
         text-align: center;
     }
     h2 {
-        margin: 0 1vw 2.5vw;
-        font-size: 3vw;
+        font-weight: normal;
+        margin: 0 1vw 1vw;
+        font-size: 1.4vw;
     }
     &.hide {
         opacity: 0;
@@ -41,9 +42,9 @@
         }
 
         .profile-name {
-            padding-left: 1vw;
-            font-size: 5vw;
-            line-height: 8vw;
+            padding-left: 0;
+            font-size: 3vw;
+            line-height: 4vw;
         }
 
         .description {
