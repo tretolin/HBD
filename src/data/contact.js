@@ -20,10 +20,27 @@ export const contactData =[
         label: "Download",
         file: "/Luis-Treto-Resume.pdf",
     },
-    // {
-    //     name: "Website",
-    //     data: "Personal website",
-    //     icon: "web.svg",
-    //     link: "https://www.linkedin.com/in/luis-treto-590879108/",
-    // },
+]
+
+export const social = [
+    {
+        name: "Facebook",
+        account:''
+    },
+    {
+        name: "Twitter",
+        account:''
+    },
+    {
+        name: "Instagram",
+        account:''
+    },
+    {
+        name: "Whatsapp",
+        account:''
+    },
+    {
+        name: "Linkedin",
+        account:''
+    },
 ]

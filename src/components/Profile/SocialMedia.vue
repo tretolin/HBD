@@ -1,39 +1,64 @@
 <script setup>
 import { ref } from "vue";
 import { asset } from "../../utils/utils";
+import { social } from '@/data/contact'
 
-const socialNetworks = ref([
+let socialNetworks = ref([
     {
         name: "Facebook",
         src: "facebook.svg",
-        url: "www.facebook.com",
-        active: true,
+        url: "",
+        active: false,
     },
     {
         name: "Twitter",
         src: "twitterx.svg",
-        url: "www.facebook.com",
-        active: true,
+        url: "",
+        active: false,
     },
     {
         name: "Instagram",
         src: "instagram.svg",
-        url: "www.facebook.com",
-        active: true,
+        url: "",
+        active: false,
     },
     {
         name: "Whatsapp",
         src: "whatsapp.svg",
-        url: "www.facebook.com",
-        active: true,
+        url: "",
+        active: false,
     },
     {
         name: "Linkedin",
         src: "linkedin.svg",
-        url: "www.facebook.com",
-        active: true,
+        url: "",
+        active: false,
     },
 ]);
+
+const hasSocialMedia = (network) => {
+    let name =  network.name;
+    let hasSocial = social.filter( (s) => name == s.name && s.account);
+    let url = hasSocial.length ? hasSocial[0].account : ''; 
+    console.log(url)
+    return url;
+} 
+
+const filteredSocialMedia = () => {
+    let filteredMedia = [];
+    socialNetworks.value.map( (network) => {
+        let url = hasSocialMedia(network)
+        if(url) {
+            network.actve = true;
+            network.url = url;
+            filteredMedia.push(network)
+        }
+    })
+    socialNetworks = filteredMedia;
+}
+
+filteredSocialMedia();
+console.log()
 
 </script>
 <template>
@@ -44,6 +69,7 @@ const socialNetworks = ref([
                 :area-label="network.name"
                 :key="index"
                 draggable="false"
+                target="_blank"
             >
                 <img
                     :src="asset('/icons/'+network.src)"
