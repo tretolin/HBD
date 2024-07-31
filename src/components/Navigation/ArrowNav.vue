@@ -9,7 +9,7 @@ defineProps(["reverse"]);
         <img
             class="pointer"
             :class="[reverse ? 'reverse' : '']"
-            :src="asset('/icons/arrow.svg')"
+            :src="asset('/icons/chevron.svg')"
             alt="arrow navigation"
             draggable="false"
         />

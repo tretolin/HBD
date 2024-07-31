@@ -46,3 +46,19 @@ body {
     color: $main-font-color;
     padding-bottom: 10%;
 }
+
+button {
+    border-radius: 6%;
+    overflow: hidden;
+
+    padding: 1.5vw;
+    background-color: $link-color !important;
+    color:$primary-color;
+    border: 0;
+    transition: background-color .2s ease-in-out;
+
+    cursor: pointer;
+    &:hover {
+        background-color: $secondary-color !important;
+    }
+}
