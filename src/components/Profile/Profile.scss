@@ -9,13 +9,13 @@
     transition: opacity ease-in 0.2s;
     div,
     h1 {
-        font-size: w;
+        font-size: 10vw;
         text-align: center;
     }
     h2 {
+        font-size: 1.9vw;
         font-weight: normal;
         margin: 0 1vw 1vw;
-        font-size: 1.4vw;
     }
     &.hide {
         opacity: 0;

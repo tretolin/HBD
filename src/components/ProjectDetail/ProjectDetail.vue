@@ -14,6 +14,17 @@
 
                 <p class="description">
                     {{ project.description ? project.description : "" }}
+                    <div>
+                        <a
+                            class="theme-link"
+                            draggable="false"
+                            v-if="project.link"
+                            :href="project.link"
+                            target="_blank"
+                            alt="website link"
+                            >Ir a sitio</a
+                        >
+                    </div>
                 </p>
 
                 <div class="project-content">
