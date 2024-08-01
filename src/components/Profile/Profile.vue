@@ -4,7 +4,7 @@ import SocialMedia from './SocialMedia.vue'
 import Pallete from "../Pallete/Pallete.vue";
 let isHide = ref(true)
 
-const name = ref("Luis Javier");
+const name = ref("Luis Treto");
 // const description = ref(`Soy Luis, soy programador`);
 </script>
 <template>

@@ -1,27 +1,27 @@
 <template>
     <div class="page-content">
-        <h1>About me 👨🏻‍💻</h1>
+        <h1>Sobre mi 👨🏻‍💻</h1>
         <section class="about-me">
             <p>
-                Hello, my name is Luis Treto. I have over 10 years of experience
-                working as a frontend developer. Throughout my career, I have
-                gained extensive knowledge in various frontend frameworks as
-                well as backend technologies.
+                Hola, mi nombre es Luis Treto. Tengo más de 10 años de
+                experiencia trabajando como desarrollador frontend. A lo largo
+                de mi carrera, he adquirido un amplio conocimiento en varios
+                frameworks de frontend, así como en tecnologías de backend.
             </p>
             <p>
-                In addition to my technical skills, I possess a deep
-                understanding of UI/UX design and have honed my abilities as a
-                designer. I am also experienced in agile methodologies, which
-                have enabled me to work efficiently in collaborative
-                environments.
+                Además de mis habilidades técnicas, poseo una comprensión
+                profunda del diseño UI/UX y he perfeccionado mis habilidades
+                como diseñador. También tengo experiencia en metodologías
+                ágiles, lo que me ha permitido trabajar de manera eficiente con
+                equipos de desarrollo.
             </p>
             <p>
-                I am passionate about design and continuously strive to create
-                exceptional user experiences.
+                Disfruto del diseño y continuo actualizándome para hacer un
+                mejor trabajo.
             </p>
             <p>
-                I would like to continue progressing in my career by learning
-                new technologies and taking on new challenges.
+                Me gustaría seguir progresando en mi carrera aprendiendo nuevas
+                tecnologías y participando en nuevos retos.
             </p>
         </section>
     </div>

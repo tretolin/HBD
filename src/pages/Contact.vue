@@ -27,7 +27,7 @@ const copyToClipboard = value => navigator.clipboard.writeText(value)
                     <a v-if="!item.link && item.file" :href="item.file" target="_blank" download>
                         <button>{{ item.label}}</button>
                     </a>
-                    <button v-if="!item.link && !item.file" @click="copyToClipboard(item.data)">Copy</button>
+                    <button v-if="!item.link && !item.file" @click="copyToClipboard(item.data)">Copiar</button>
                     <a v-if="!item.file && item.link"class="theme-link" :href="item.link" target="_blank">{{
                         item.name
                     }}</a>
