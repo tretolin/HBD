@@ -7,16 +7,16 @@ export const projects = [
             "https://64.media.tumblr.com/ed6f9a0152aa2d5b199ca1e910feee2c/5c5f21583a04896d-9b/s1280x1920/c2d7bb26892daaa2dd214f604763d17a82786a06.jpg",
         ],
         description:
-            "Versión Web de aplicación existente para un projecto que neceistaba una migración de versión mobile a version werb",
+            "Para ampliar el acceso a los usuarios se desarrollo de una versión web de una aplicación ya existente pero solo disponible para dispositivos móviles,  igualando estilos y funcionalidades para tener el mismo comportamiento",
     },
     {
         id: 2,
         title: "Envia Flores",
         urls: [
-            "https://64.media.tumblr.com/21df76343340c43a1c637d9e1afff5f0/caea272ae48e4efd-fc/s1280x1920/1098517640d8547f82c0ca7a48f4a1f09cf7bd65.pnj",
+            "https://64.media.tumblr.com/59de8f503e19255f3b31c58a36a058e2/caea272ae48e4efd-11/s1280x1920/9b2d9ddf8525145d42ce145c5aec96dd206db8df.pnj",
             "https://64.media.tumblr.com/0deb552bf95ee6b4a16331ae1ece8fee/caea272ae48e4efd-2f/s2048x3072/8557743eac3f57e300128bcaea0fc9466905df18.pnj",
         ],
-        description: "Redseño de calendario web UI/UX",
+        description: "Como desarrollador propuse mejoras en la UI del sitio, entre los cambios que propuse uno de ellos fue la remodelación del calendario para seleccionar horarios de entrega, rediseñé la interfaz para una mas sencilla y clara forma de llevar ese proceso",
     },
     {
         id: 3,
@@ -28,7 +28,7 @@ export const projects = [
             "https://64.media.tumblr.com/397f45e4eec7d00a23ae14add299650c/9928e9e0475d457a-69/s2048x3072/240da786a5ec1edd16ff7f7607884f12a5db4cac.pnj",
             "https://64.media.tumblr.com/88d0f43a4e9e53896f61ec74302cc077/9928e9e0475d457a-08/s2048x3072/e802cf525014441c99ed049fce6c241a09621cff.pnj",
         ],
-        description: "Diseño de sitio web Barbería Dominó",
+        description: "Diseñé y desarrollé el sitio web de la Barbería Dominó, trabajé en comunicación directa con el cliente en el prototipo, desarrollo y pruebas",
         link: "https://domino-barberia.onrender.com/",
     },
     {
@@ -37,8 +37,7 @@ export const projects = [
         urls: [
             "https://64.media.tumblr.com/700f12ba8422a86df31655c0bb5d9943/5c5f21583a04896d-23/s2048x3072/5d589e1ddb225f46356d87b52db436a150cc1998.jpg",
         ],
-        description: "Diseño y creación de editor de credenciales web",
-        
+        description: "Trabajando bajo la metodología SCRUM colaboré en este proyecto mejorando las funcionalidades del sitio y haciendo mejoras en la interfaz, también participé en el proceso de despliegue de cambios",
     },
     // {
     //     id: 5,

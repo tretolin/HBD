@@ -14,10 +14,10 @@ export const contactData =[
     },
     {
         name: "Resume",
-        data: "Resume",
+        data: "Curriculum",
         icon: "contact_page.svg",
         link: "",
-        label: "Download",
+        label: "Descargar",
         file: "/Luis-Treto-Resume.pdf",
     },
 ]
