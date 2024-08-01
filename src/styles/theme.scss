@@ -1,14 +1,15 @@
 // Color Theme
 $primary-color: #f1f1e9;
-$secondary-color: #f22c16;
+$secondary-color: #4caf86;
 $text-color: #444;
-$link-color: #446677;
+$link-color: #6f7e76;
 $main-font-color: #2e2929;
-
+$main-radius: 2%;
+$border-radius: 6%;
 $gap-gallery: 1vh;
 
 // Mixins
-@mixin rounded-hidden($radius: 2%) {
+@mixin rounded-hidden($radius: $main-radius) {
     border-radius: $radius;
     overflow: hidden;
 }
@@ -48,7 +49,7 @@ body {
 }
 
 button {
-    border-radius: 6%;
+    border-radius: $border-radius;
     overflow: hidden;
 
     padding: 1.5vw;

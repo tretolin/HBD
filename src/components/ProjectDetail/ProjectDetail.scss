@@ -1,3 +1,5 @@
+@import "@styles/theme.scss";
+
 .project-header {
     display: flex;
     align-items: center;
@@ -30,13 +32,14 @@
             margin-bottom: 0;
         }
         .description {
-            max-width:60%;
+            max-width:800%;
             padding: 1vw;
             text-align: center;
-            font-size: 18px;
+            font-size: 1.7vw;
             font-style: italic;
         }
         img {
+        @include rounded-hidden;
             opacity: 1;
             width: 100%;
             &.visible {
