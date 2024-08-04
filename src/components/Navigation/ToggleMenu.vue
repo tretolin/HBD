@@ -41,7 +41,7 @@ const menuOptions = ref(props.options);
 
 .fade-enter-active,
 .fade-leave-active {
-    transition: all 0.6s ease-in-out;
+    transition: all 0.2s ease-in-out;
     opacity: 1;
 }
 .fade-enter-from,

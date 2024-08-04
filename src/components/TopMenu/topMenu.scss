@@ -31,6 +31,7 @@
             font-size: 2.5w;
         }
         .brand-name {
+            @include rounded-hidden;
             font-weight: bold;
             padding-left: 4px;
             font-size: 20px;
