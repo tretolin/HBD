@@ -3,7 +3,7 @@ import Profile from "../components/Profile/Profile.vue";
 import Gallery from "../components/Gallery/Gallery.vue";
 </script>
 <template>
-    <div>
+    <div class="main-page">
         <Profile />
         <v-slot>
             <Gallery />

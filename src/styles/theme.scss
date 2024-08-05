@@ -1,6 +1,8 @@
 // Color Theme
 $primary-color: #f1f1e9;
 $secondary-color: #4caf86;
+$dark-color: #333;
+$secondary-color-darker: mix(black, $secondary-color,30%);
 $text-color: #444;
 $link-color: #6f7e76;
 $main-font-color: #2e2929;
@@ -45,7 +47,6 @@ body {
     margin: 0;
     background-color: $primary-color;
     color: $main-font-color;
-    padding-bottom: 10%;
 }
 
 button {

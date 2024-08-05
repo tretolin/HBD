@@ -1,5 +1,6 @@
 <script setup>
 import TopMenu from "./TopMenu/TopMenu.vue";
+import Footer from "./Footer/Footer.vue"
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import TopMenu from "./TopMenu/TopMenu.vue";
             <component :is="Component" />
         </transition>
     </router-view>
+    <Footer/>
 </template>
 <style>
 @import url("../styles/pages-transition.scss");

@@ -7,6 +7,10 @@
     justify-content: center;
 }
 
+.main-page, .page-content {
+    height:100vh;
+}
+
 @media (max-width: 500px) {
     .about-me {
         padding: 0px 6%;

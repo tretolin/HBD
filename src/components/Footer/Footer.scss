@@ -1,0 +1,12 @@
+@import '@/styles/theme.scss';
+.footer {
+    position: reltive;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    font-size:14px;
+    background-color: $secondary-color-darker;
+    color: $primary-color;
+    padding: 1%;
+}
