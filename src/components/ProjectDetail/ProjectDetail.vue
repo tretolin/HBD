@@ -3,13 +3,18 @@
         <section>
             <div class="project-content-page">
                 <div class="project-header">
-                    <ArrowNav
+                    <!-- <ArrowNav
                         class="arrow"
                         reverse="true"
                         @click="goToProject(prev)"
-                    />
+                    /> -->
+                    <ArrowNav
+                        class="arrow"
+                        reverse="true"
+                        @click="goHome"
+                    /> 
                     <h2>{{ project.title }}</h2>
-                    <ArrowNav class="arrow" @click="goToProject(next)" />
+                    <!-- <ArrowNav class="arrow" @click="goToProject(next)" /> -->
                 </div>
 
                 <p class="description">
@@ -45,6 +50,7 @@ import ArrowNav from "@/components/Navigation/ArrowNav.vue";
 
 const router = useRouter();
 const route = useRoute();
+const goHome = () => { router.push({ name: 'home'}) };
 const projectId = ref(route.params.id);
 let currentIndex = ref(0);
 let prev = ref();
