@@ -9,6 +9,8 @@
 
 .main-page, .page-content {
     height:100vh;
+    overflow-y: auto;
+    padding-bottom: 3vw;
 }
 
 @media (max-width: 500px) {
